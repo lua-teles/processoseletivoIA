@@ -14,6 +14,7 @@ A CNN implementada em train_model.py é composta pelas seguintes camadas:
 - **Flatten:** transforma o mapa de features em vetor unidimensional
 - **Dense (32 neurônios, ReLU):** camada totalmente conectada para classificação
 - **Dense (10 neurônios, Softmax):** saída com a probabilidade para cada dígito (0 a 9)
+
 A arquitetura foi mantida simples e leve, com apenas 2 camadas convolucionais, adequada para Edge AI e compatível com os requisitos de tempo do pipeline de CI.
  
 ---
