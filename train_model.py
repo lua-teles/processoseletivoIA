@@ -43,8 +43,8 @@ model.fit(
 
 # 5. Avaliação final
 loss, accuracy = model.evaluate(x_test, y_test, verbose=0)
-print(f"\n✅ Acurácia final no conjunto de teste: {accuracy * 100:.2f}%")
+print(f"\n Acurácia final no conjunto de teste: {accuracy * 100:.2f}%")
 
 # 6. Salvamento do modelo
 model.save("model.h5")
-print("✅ Modelo salvo em: model.h5")
+print(" Modelo salvo em: model.h5")
