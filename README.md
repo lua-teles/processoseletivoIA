@@ -55,9 +55,10 @@ Essa técnica converte os pesos do modelo de float32 para int8 em tempo de conve
 ## 5️⃣ Comentários Adicionais
  
 **Dificuldades:**
-- - O pipeline de CI apresentou timeout na primeira execução devido ao tempo de
+- O pipeline de CI apresentou timeout na primeira execução devido ao tempo de
 instalação do TensorFlow somado ao tempo de treinamento. Na segunda execução
 o CI rodou com sucesso sem nenhuma alteração nos scripts.
+
 **Decisões técnicas:**
 - Optou-se por uma arquitetura com apenas 2 camadas convolucionais para garantir
 leveza e compatibilidade com Edge AI.
@@ -65,6 +66,7 @@ leveza e compatibilidade com Edge AI.
 velocidade e acurácia.
 - A Quantização de Faixa Dinâmica foi escolhida por ser simples de aplicar
 e eficaz na redução do tamanho do modelo.
+
 **Aprendizados:**
 - Compreensão do fluxo completo de treinamento → salvamento → conversão → otimização para Edge AI.
 - Importância de equilibrar acurácia e eficiência em ambientes com restrições de recursos computacionais.
